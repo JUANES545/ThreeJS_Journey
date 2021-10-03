@@ -40,8 +40,9 @@ const tick = () =>
     const elapsedTime = clock.getElapsedTime()
 
     // Update objects
-    mesh.position.x = Math.cos(elapsedTime) // wave effect
-    mesh.position.y = Math.sin(elapsedTime)
+    camera.position.x = Math.cos(elapsedTime) // wave effect
+    camera.position.y = Math.sin(elapsedTime)
+    camera.lookAt(mesh.position)
     // Render
     renderer.render(scene,camera)
     window.requestAnimationFrame(tick)
