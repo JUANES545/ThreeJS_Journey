@@ -1,5 +1,7 @@
 # Three.js Journey
 
+In this lesson we learned about the movement objects behavior
+
 ## Setup
 Download [Node.js](https://nodejs.org/en/download/).
 Run this followed commands:
