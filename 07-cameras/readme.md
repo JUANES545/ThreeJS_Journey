@@ -1,5 +1,5 @@
-# Three.js Journey
-
+# Three.js Journey 
+Recommended camera field of view: 45-75
 ## Setup
 Download [Node.js](https://nodejs.org/en/download/).
 Run this followed commands:
