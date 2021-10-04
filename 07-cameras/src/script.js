@@ -25,7 +25,12 @@ scene.add(mesh)
 
 // Camera
 // const camera = new THREE.PerspectiveCamera(45, sizes.width / sizes.height, 0.1, 200)
-const camera = new THREE.OrthographicCamera(-1, 1,1,-1, 0.1, 100)
+const aspectRatio = sizes.width / sizes.height
+console.log(aspectRatio)
+const camera = new THREE.OrthographicCamera(
+    -1 * aspectRatio,
+    1 * aspectRatio,
+    1,-1, 0.1, 100)
 camera.position.x = 2
 camera.position.y = 2
 camera.position.z = 2
