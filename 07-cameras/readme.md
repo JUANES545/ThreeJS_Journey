@@ -2,9 +2,9 @@
 In this lesson we learned about the cameras, cameras arrays, position, functions and important values and properties like:
 - Recommended camera field of view: 45-75.
 - Orbit controls configuration (read the documentation for orbit)
-- First person camera.trace.
+- First person camera perspective configuration.
 - A lot of preconfigured cameras to use.
-- Detect the cursor over the page and modify the position of the main camera
+- Detect the cursor over the page and modify the position of the main camera.
 ## Setup
 Download [Node.js](https://nodejs.org/en/download/).
 Run this followed commands:
