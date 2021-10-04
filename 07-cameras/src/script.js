@@ -48,6 +48,9 @@ scene.add(camera)
 
 // Controls
 const controls = new OrbitControls(camera, canvas)
+controls.enableDamping = true
+// controls.target.y = 1
+// controls.update()
 
 // Renderer
 const renderer = new THREE.WebGLRenderer({
