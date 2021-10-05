@@ -1,5 +1,8 @@
 # Three.js Journey
 
+in this class we learned about the fullscreen properties and how we can use the update settings to 
+automatically adjust the size of the screen, and how to access to handle fullscreen event with double click.
+
 ## Setup
 Download [Node.js](https://nodejs.org/en/download/).
 Run this followed commands:
