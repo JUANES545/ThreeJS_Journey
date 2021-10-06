@@ -12,9 +12,10 @@ const canvas = document.querySelector('canvas.webgl')
 const scene = new THREE.Scene()
 
 // Object
+
 // const geometry = new THREE.BoxGeometry(1, 1, 1,2,2,2)
 // const geometry = new THREE.BoxBufferGeometry(1, 1, 1,4,4,4) // Exactly the same but more efficiency
-/*
+/* To create random lines in the canvas
 const geometry = new THREE.Geometry()
 
 for(let i = 0; i<50; i++){
@@ -33,12 +34,26 @@ for(let i = 0; i<50; i++){
     ))
 }
 */
-
+/* Float32Array
 const positionsArray = new Float32Array([
     0,0,0,
     0,1,0,
     1,0,0
 ])
+const positionsAttribute = new THREE.BufferAttribute(positionsArray, 3) //to convert a bufferGeometry
+const geometry = new THREE.BufferGeometry()
+geometry.setAttribute('position', positionsAttribute) // Set the array to geometry, the most optimized
+*/
+
+const geometry = new THREE.BufferGeometry()
+const count = 50
+const positionsArray = new Float32Array(count * 3 * 3)
+
+for (let i = 0; i < count * 3 * 3; i++){
+    positionsArray[i] = Math.random()
+}
+const positionsAttribute = new THREE.BufferAttribute(positionsArray, 3)
+geometry.setAttribute('position', positionsAttribute)
 
 const material = new THREE.MeshBasicMaterial({
     color: 0xff0000,
