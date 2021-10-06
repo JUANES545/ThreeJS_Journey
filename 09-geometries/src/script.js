@@ -13,6 +13,8 @@ const scene = new THREE.Scene()
 
 // Object
 // const geometry = new THREE.BoxGeometry(1, 1, 1,2,2,2)
+const geometry = new THREE.BoxBufferGeometry(1, 1, 1,4,4,4) // Exactly the same but more efficiency
+/*
 const geometry = new THREE.Geometry()
 
 for(let i = 0; i<50; i++){
@@ -30,6 +32,7 @@ for(let i = 0; i<50; i++){
         verticesIndex +2
     ))
 }
+*/
 
 const material = new THREE.MeshBasicMaterial({
     color: 0xff0000,
