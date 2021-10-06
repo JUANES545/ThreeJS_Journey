@@ -18,9 +18,9 @@ const geometry = new THREE.Geometry()
 for(let i = 0; i<50; i++){
     for (let j = 0; j<3; j++){
         geometry.vertices.push(new THREE.Vector3(
-            Math.random(),
-            Math.random(),
-            Math.random()
+            (Math.random() - .5) *4,
+            (Math.random() - .5) *4,
+            (Math.random() - .5) *4
         ))
     }
     const verticesIndex = i * 3
