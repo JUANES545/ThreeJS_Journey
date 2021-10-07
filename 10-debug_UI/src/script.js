@@ -23,6 +23,7 @@ const scene = new THREE.Scene()
 const geometry = new THREE.BoxBufferGeometry(1, 1, 1)
 const material = new THREE.MeshBasicMaterial({ color: 0xff0000 })
 const mesh = new THREE.Mesh(geometry, material)
+mesh.visible = false // set invisible
 scene.add(mesh)
 
 
@@ -33,6 +34,8 @@ gui.add(mesh.position, 'y')
     .max(3)
     .step(0.01) // Like a slider controller
     .name('elevation')
+gui
+    .add(mesh, 'visible') //to create a check box that change the property box
 
 /**
  * Sizes
