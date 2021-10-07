@@ -1,5 +1,7 @@
 # Three.js Journey
 
+In this class we installed the module npmjs dat.gui (very useful for view and modify parameters in the page)
+
 ## Setup
 Download [Node.js](https://nodejs.org/en/download/).
 Run this followed commands:
