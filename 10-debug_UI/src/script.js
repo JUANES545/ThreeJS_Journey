@@ -4,9 +4,20 @@ import * as dat from 'dat.gui'
 import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls.js'
 import gsap from 'gsap'
 
-// Debug
-
+/**
+ * Debug
+ */
 const gui = new dat.GUI()
+
+const parameters = {
+    color: 0xff0000
+}
+gui
+    .addColor(parameters, 'color')
+    .onChange(() =>
+{
+    material.color.set(parameters.color)
+})
 
 /**
  * Base
@@ -21,9 +32,10 @@ const scene = new THREE.Scene()
  * Object
  */
 const geometry = new THREE.BoxBufferGeometry(1, 1, 1)
-const material = new THREE.MeshBasicMaterial({ color: 0xff0000 })
+const material = new THREE.MeshBasicMaterial({ color: parameters.color })
 const mesh = new THREE.Mesh(geometry, material)
-mesh.visible = false // set invisible
+// mesh.visible = false // set invisible
+console.log(material.color)
 scene.add(mesh)
 
 
@@ -36,6 +48,9 @@ gui.add(mesh.position, 'y')
     .name('elevation')
 gui
     .add(mesh, 'visible') //to create a check box that change the property box
+gui
+    .add(material, 'wireframe')
+
 
 /**
  * Sizes
