@@ -6,14 +6,17 @@ import gsap from 'gsap'
 
 /**
  * Debug
- */
-const gui = new dat.GUI()
+*   gui examples and configurations
+*   https://jsfiddle.net/ikatyang/182ztwao/
+*/
+const gui = new dat.GUI({ closed: true, width: 400}) // Initial closed all folders
+// gui.hide() // hidden gui option, H IS THE MAGICAL KEY TO ENABLED GUI
 
 const parameters = {
     color: 0xff0000,
     spin: () =>
     {
-        gsap.to(mesh.rotation, { duration: 1, y: mesh.rotation.y + 10 })
+        gsap.to(mesh.rotation, { duration: 1, y: mesh.rotation.y + 10 }) // gsap library to create animations
     }
 }
 gui
