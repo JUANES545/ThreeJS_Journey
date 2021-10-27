@@ -43,8 +43,9 @@ const roughnessTexture = textureLoader.load('/textures/door/roughness.jpg')
     Filters to textures like a games
     */
 
-// colorTexture.minFilter = THREE.NearestFilter
- colorTexture.magFilter = THREE.NearestFilter
+colorTexture.generateMipmaps = false
+colorTexture.minFilter = THREE.NearestFilter
+colorTexture.magFilter = THREE.NearestFilter // nearest filter for better framerate
 
 
 /**
