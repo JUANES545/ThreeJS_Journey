@@ -35,9 +35,9 @@ const roughnessTexture = textureLoader.load('/textures/door/roughness.jpg')
 // colorTexture.offset.x = .5
 // colorTexture.offset.y = .5
 
-colorTexture.rotation = Math.PI / 4
-colorTexture.center.x = .5
-colorTexture.center.y = .5
+// colorTexture.rotation = Math.PI / 4
+// colorTexture.center.x = .5 // to center the texture on the object
+// colorTexture.center.y = .5
 
 
 
