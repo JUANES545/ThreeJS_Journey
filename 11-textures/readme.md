@@ -11,6 +11,9 @@ websites to download textures:
 [3d textures](https://3dtextures.me)
 [Arroway textures](https://arroway-textures.ch)
 
+we can create textures in this page:
+[Substance3d](https://substance3d.com/products/substance-designer/)
+
 
 ## Setup
 Download [Node.js](https://nodejs.org/en/download/).
