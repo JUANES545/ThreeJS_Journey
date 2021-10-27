@@ -30,6 +30,7 @@ const roughnessTexture = textureLoader.load('/textures/door/roughness.jpg')
 colorTexture.repeat.x = 2 //we created a custom texture size
 colorTexture.repeat.y = 3
 colorTexture.wrapS = THREE.RepeatWrapping
+colorTexture.wrapT = THREE.RepeatWrapping
 
 /**
  * Base
