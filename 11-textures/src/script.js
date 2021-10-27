@@ -39,6 +39,8 @@ const roughnessTexture = textureLoader.load('/textures/door/roughness.jpg')
 // colorTexture.center.x = .5 // to center the texture on the object
 // colorTexture.center.y = .5
 
+// Filters to textures like a games
+colorTexture.minFilter = THREE.NearestFilter
 
 
 /**
