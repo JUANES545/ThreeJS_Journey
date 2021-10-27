@@ -32,6 +32,13 @@ colorTexture.repeat.y = 3
 colorTexture.wrapS = THREE.RepeatWrapping
 colorTexture.wrapT = THREE.RepeatWrapping
 
+colorTexture.offset.x = .5
+colorTexture.offset.y = .5
+
+colorTexture.rotation = 1 // in Radias
+
+
+
 /**
  * Base
  */
