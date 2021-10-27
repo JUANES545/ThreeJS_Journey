@@ -1,5 +1,10 @@
 # Three.js Journey
 
+Its very important minimize the use of images size in the final proyect.
+recommended use compressor like tinypng.com (smaller images)
+the images are loaded like textures for the objects
+Be careful with the size
+
 ## Setup
 Download [Node.js](https://nodejs.org/en/download/).
 Run this followed commands:
