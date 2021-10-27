@@ -27,15 +27,17 @@ const ambientOcclusionTexture = textureLoader.load('/textures/door/ambientOcclus
 const metalnessTexture = textureLoader.load('/textures/door/metalness.jpg')
 const roughnessTexture = textureLoader.load('/textures/door/roughness.jpg')
 
-colorTexture.repeat.x = 2 //we created a custom texture size
-colorTexture.repeat.y = 3
-colorTexture.wrapS = THREE.RepeatWrapping
-colorTexture.wrapT = THREE.RepeatWrapping
+// colorTexture.repeat.x = 2 //we created a custom texture size
+// colorTexture.repeat.y = 3
+// colorTexture.wrapS = THREE.RepeatWrapping
+// colorTexture.wrapT = THREE.RepeatWrapping
 
-colorTexture.offset.x = .5
-colorTexture.offset.y = .5
+// colorTexture.offset.x = .5
+// colorTexture.offset.y = .5
 
-colorTexture.rotation = 1 // in Radias
+colorTexture.rotation = Math.PI / 4
+colorTexture.center.x = .5
+colorTexture.center.y = .5
 
 
 
