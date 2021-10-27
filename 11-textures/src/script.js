@@ -4,7 +4,7 @@ import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls.js'
 
 // Textures
 const textureLoader = new THREE.TextureLoader()
-const texture = textureLoader.load('/textures/door/color.jpg')
+const texture = textureLoader.load('/textures/door/color.jpg') //to import a lot of textures
 
 /**
  * Base
