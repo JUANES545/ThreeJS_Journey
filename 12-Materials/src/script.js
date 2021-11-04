@@ -34,7 +34,10 @@ const scene = new THREE.Scene()
 // material.transparent = true // both properties to transparency effect
 // material.alphaMap = doorAlphaTexture
 
-const material = new THREE.MeshNormalMaterial() // impressive random colors
+// const material = new THREE.MeshNormalMaterial() // impressive random colors
+// material.wireframe = true // the last properties work
+// material.flatShading = true // more polygon figures
+
 
 const sphere = new THREE.Mesh(
     new THREE.SphereGeometry(.5, 16, 16),
