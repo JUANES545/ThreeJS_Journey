@@ -18,6 +18,7 @@ const sphere = new THREE.Mesh(
     new THREE.SphereGeometry(.5, 16, 16),
     material
 )
+sphere.position.x = -1.5
 
 const plane = new THREE.Mesh(
     new THREE.PlaneBufferGeometry(1, 1),
