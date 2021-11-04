@@ -25,15 +25,16 @@ const canvas = document.querySelector('canvas.webgl')
 const scene = new THREE.Scene()
 
 //Objects
-const material = new THREE.MeshBasicMaterial({color: 'yellow'} )
-material.map = doorColorTexture
-material.color.set('#ff00ff')
-material.color = new THREE.Color('#f0f')
-material.wireframe = true // triangles objects
-material.opacity = .5
-material.transparent = true // both properties to transparency effect
+// const material = new THREE.MeshBasicMaterial({color: 'yellow'} )
+// material.map = doorColorTexture
+// material.color.set('#ff00ff')
+// material.color = new THREE.Color('#f0f')
+// material.wireframe = true // triangles objects
+// material.opacity = .5
+// material.transparent = true // both properties to transparency effect
 // material.alphaMap = doorAlphaTexture
 
+const material = new THREE.MeshNormalMaterial() // impressive random colors
 
 const sphere = new THREE.Mesh(
     new THREE.SphereGeometry(.5, 16, 16),
