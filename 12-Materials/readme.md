@@ -4,6 +4,9 @@
 Download [Node.js](https://nodejs.org/en/download/).
 Run this followed commands:
 
+To install the gui packages:
+npm install --save dat.gui
+
 ``` bash
 # Install dependencies (only the first time)
 npm install

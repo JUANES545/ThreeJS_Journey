@@ -1,6 +1,10 @@
 import './style.css'
 import * as THREE from 'three'
 import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls.js'
+import * as dat from 'dat.gui'
+
+// Debug
+const gui = new dat.GUI() // To create a empty panel
 
 // Textures
 const textureLoader = new THREE.TextureLoader()
@@ -59,6 +63,7 @@ const material = new THREE.MeshStandardMaterial() // More realistic algorithm
 material.metalness = .15
 material.roughness = .65
 
+gui.add(material, 'metalness').min(0).max(1).step(0.0001)
 
 
 const sphere = new THREE.Mesh(
