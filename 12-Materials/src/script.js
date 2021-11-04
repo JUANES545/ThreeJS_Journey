@@ -24,7 +24,14 @@ const plane = new THREE.Mesh(
     new THREE.PlaneBufferGeometry(1, 1),
     material
 )
-scene.add(sphere, plane)
+
+const torus = new THREE.Mesh(
+    new THREE.TorusBufferGeometry(.3, .2, 16, 32),
+    material
+)
+torus.position.x = 1.1
+
+scene.add(sphere, plane, torus)
 
 /**
  * Sizes
