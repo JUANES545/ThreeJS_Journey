@@ -62,13 +62,20 @@ const scene = new THREE.Scene()
 const material = new THREE.MeshStandardMaterial() // More realistic algorithm
 material.metalness = .15
 material.roughness = .65
+material.map = doorColorTexture
+material.aoMap = doorAmbientOcclusionTexture
 
 gui.add(material, 'metalness').min(0).max(1).step(0.0001)
+gui.add(material, 'roughness').min(0).max(1).step(0.0001)
 
 
 const sphere = new THREE.Mesh(
     new THREE.SphereGeometry(.5, 16, 16),
     material
+)
+sphere.geometry.setAttribute(
+    'uv2',
+    new THREE.BufferAttribute(sphere.geometry.attributes.uv.array, 2)
 )
 sphere.position.x = -1.5
 
@@ -76,10 +83,18 @@ const plane = new THREE.Mesh(
     new THREE.PlaneBufferGeometry(1, 1),
     material
 )
+plane.geometry.setAttribute(
+    'uv2',
+    new THREE.BufferAttribute(plane.geometry.attributes.uv.array, 2)
+)
 
 const torus = new THREE.Mesh(
     new THREE.TorusBufferGeometry(.3, .2, 16, 32),
     material
+)
+torus.geometry.setAttribute(
+    'uv2',
+    new THREE.BufferAttribute(torus.geometry.attributes.uv.array, 2)
 )
 torus.position.x = 1.1
 
